@@ -6,7 +6,7 @@ export default function MoviesCardList({cards, isLoading}) {
   const showCards = useMediaQuery({ query: `(max-width: 880px)` }) ? 5 : 8;
 
   return (
-    <section className="section movies-list">
+    <div className="section movies-list">
       <div className='section__container movies-list__container'>
         {cards.length === 0 &&
           (
@@ -28,6 +28,6 @@ export default function MoviesCardList({cards, isLoading}) {
                   ''
         )}
       </div>
-    </section>
+    </div>
   );
 }

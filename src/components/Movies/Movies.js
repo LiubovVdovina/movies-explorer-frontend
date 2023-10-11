@@ -9,7 +9,7 @@ const testEmptyCards = []
 
 export default function Movies({isLoading}) {
   return (
-    <main className="movies ">
+    <main className="movies">
       <div className="movies__container">
         <SearchForm />
         {isLoading ? <Preloader /> : <MoviesCardList cards={testCards}/>}
