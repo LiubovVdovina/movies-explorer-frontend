@@ -44,7 +44,7 @@ export default function Profile() {
               </input>
             </label>
           </div>
-          <ul className="buttons">
+          <ul className="buttons buttons_place_profile">
             <li className='buttons__item'>
               <button
               type="submit"

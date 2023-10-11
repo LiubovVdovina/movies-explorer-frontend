@@ -110,6 +110,10 @@
   width: 100%;
 }
 
+.buttons_place_auth {
+  margin-top: 135px;
+}
+
 .auth__help {
   font-size: 14px;
   font-weight: 400;
@@ -140,7 +144,10 @@
   .auth__container {
     height: 55vh;
   }
-  
+ 
+  .buttons_place_auth {
+    margin-top: 220px;
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -166,5 +173,8 @@
     font-size: 12px;
     line-height: 1.2;
   }
-  
+
+  .buttons_place_auth {
+    margin-top: 310px;
+  }
 }

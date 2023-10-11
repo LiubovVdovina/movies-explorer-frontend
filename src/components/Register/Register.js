@@ -60,7 +60,7 @@ export default function Register() {
               <span className="auth__error">Текст ошибки</span>
             </label>
           </div>
-          <ul className="buttons">
+          <ul className="buttons buttons_place_auth">
             <li className='buttons__item buttons__item_place_auth'>
               <button
               type="submit"
