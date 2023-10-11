@@ -1,0 +1,25 @@
+.header_theme_dark {
+  background-color: #073042;
+  color: #FFFFFF;
+}
+
+.header__container {
+  gap: 16px;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  position: relative;
+}
+
+
+.logo {
+  height: 38px;
+}
+
+
+@media screen and (max-width: 880px) {
+  .header__container {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
