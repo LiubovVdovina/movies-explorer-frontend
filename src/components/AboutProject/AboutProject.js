@@ -16,7 +16,7 @@ export default function AboutProject() {
               <p className='about__description'>У каждого этапа был мягкий и жёсткий дедлайн, которые нужно было соблюдать, чтобы успешно защититься.</p>
             </li>
           </ul>
-          <div className='about__timeline'>
+          <div className='timeline'>
             <p className='timeline__cell timeline__top timeline__one-week'>1 неделя</p>
             <p className='timeline__cell timeline__top timeline__four-weeks'>4 недели</p>
             <p className='timeline__cell timeline__bottom timeline__backend'>Back-end</p>

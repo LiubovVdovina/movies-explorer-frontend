@@ -10,12 +10,12 @@ export default function Profile() {
 
   const currentUser = React.useContext(CurrentUserContext);
   return (
-    <main className="section section_type_form">
-      <div className='form__container'>
-        <h1 className='form__title'>{`Привет, ${currentUser.name}!`}</h1>
-        <form name="profile" className='profile__form form'>
+    <main className="section profile">
+      <div className='profile__container'>
+        <h1 className='profile__title'>{`Привет, ${currentUser.name}!`}</h1>
+        <form name="profile" className='form form_place_profile'>
           <div className='form__fieldset'>
-            <label className='form__field'>
+            <label className='form__field field'>
               Имя
               <input
                 className='form__input form__input_place_profile form__input_type_name'
@@ -30,7 +30,7 @@ export default function Profile() {
               >
               </input>
             </label>
-            <label className='form__field form__field_type_last'>
+            <label className='form__field field field_type_last'>
               E-mail
               <input
                 className='form__input form__input_place_profile form__input_type_email'
@@ -44,7 +44,7 @@ export default function Profile() {
               </input>
             </label>
           </div>
-          <ul className="form__buttons">
+          <ul className="buttons">
             <li className='buttons__item'>
               <button
               type="submit"

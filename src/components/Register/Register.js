@@ -9,18 +9,18 @@ export default function Register() {
   }          
   
   return (
-    <main className="section section_type_auth">
-      <div className='form__container_type_auth '>
+    <main className="section auth">
+      <div className='auth__container'>
         <Link to='/' className='logo logo_place_auth link'>
           <img src={logo} alt="логотип" />
         </Link>
-        <h1 className='form__title'>{'Добро пожаловать!'}</h1>
-        <form name="profile" className='profile__form_place_auth form'>
-          <div className='form__fieldset_place_auth'>
-            <label className='form__field_place_auth'>
+        <h1 className='auth__title'>{'Добро пожаловать!'}</h1>
+        <form name="profile" className='form form_place_auth'>
+          <div className='form__auth-fieldset'> 
+            <label className='field form__auth-field field'>
               <span className='field__caption'>Имя</span>
               <input
-                className='form__input_place_auth form__input form__input_type_name'
+                className='form__input form__input_place_auth form__input_type_name'
                 name="name"
                 id="name"
                 type="text"
@@ -32,7 +32,7 @@ export default function Register() {
               >
               </input>
             </label>
-            <label className='form__field_place_auth form__field_type_last'>
+            <label className='field form__auth-field field_type_last'>
             <span className='field__caption'>E-mail</span>
               <input
                 className='form__input form__input_place_auth form__input_type_email'
@@ -45,7 +45,7 @@ export default function Register() {
               >
               </input>
             </label>
-            <label className='form__field_place_auth form__field_type_last'>
+            <label className='field form__auth-field field_type_last'>
             <span className='field__caption'>Пароль</span>
               <input
                 className='form__input form__input_place_auth form__input_type_password'
@@ -57,22 +57,22 @@ export default function Register() {
                 onChange={handleInputChange}
               >
               </input>
-              <span className="register__error">Текст ошибки</span>
+              <span className="auth__error">Текст ошибки</span>
             </label>
           </div>
-          <ul className="form__buttons">
+          <ul className="buttons">
             <li className='buttons__item buttons__item_place_auth'>
               <button
               type="submit"
-              className={`button form__button_place_auth`}
+              className={`button button_place_auth`}
               >
               Зарегистрироваться
           </button>
             </li>
             <li className='buttons__item buttons__item_place_auth'>
-              <span className="register__help">
+              <span className="auth__help">
                 Уже зарегистрированы?&nbsp;
-                <Link to="/signin" className="link register__link">
+                <Link to="/signin" className="link auth__link">
                   Войти
                 </Link>
               </span> 

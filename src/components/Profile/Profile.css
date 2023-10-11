@@ -1,4 +1,4 @@
-.section_type_form {
+.profile {
   width: 100%;
   height: calc(100vh - 74px);
   padding-top: 74px;
@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-.form__container {
+.profile__container {
   flex-direction: column;
   max-width: 396px;
   width: 100%;
@@ -14,7 +14,7 @@
   display: flex;
 }
 
-.form__title {
+.profile__title {
   font-size: 24px;
   font-weight: 500;
   line-height: 29px;
@@ -24,7 +24,7 @@
   margin: 0;
   height: min-content;
 }
-.profile__form {
+.form_place_profile {
   margin-top: 123px;
 }
 .form {
@@ -57,7 +57,7 @@
   padding-bottom: 16px;
 }
 
-.form__field_type_last {
+.field_type_last {
   border: none;
   min-width: min-content;
 }
@@ -76,7 +76,7 @@
   margin-bottom: -1px;
 }
 
-.form__buttons {
+.buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,19 +107,19 @@
 }
 
 @media screen and (max-width: 880px) {
-  .profile__form {
+  .form_place_profile {
     margin-top: 96px;
   }
-  .form__container {
+  .profile__container {
     max-width: 410px;
   }
 }
 
 @media screen and (max-width: 580px) {
-  .profile__form {
+  .form_place_profile {
     margin-top: 80px;
   }
-  .form__container {
+  .profile__container {
     max-width: 80%;
   }
 }

@@ -7,7 +7,7 @@
   height: min-content;
 }
 
-.checkbox__container {
+.checkbox {
   display: flex;
   flex-direction: row;
   gap: 14px;
@@ -39,7 +39,7 @@
   border-radius: 20px;
 }
 
-.filter__text {
+.checkbox__text {
   margin: 0;
   font-weight: 400;
   font-size: 13px;
@@ -70,13 +70,13 @@
 }
 
 @media screen and (max-width: 880px) {
-  .checkbox__container {
+  .checkbox {
     flex-direction: row-reverse;
   }
 }
 
 @media screen and (max-width: 580px) {
-  .filter__text {
+  .checkbox__text {
     font-size: 11px;
   }
 }

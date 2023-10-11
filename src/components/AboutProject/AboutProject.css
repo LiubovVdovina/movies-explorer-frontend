@@ -31,7 +31,7 @@
   padding: 0;
 }
 
-.about__timeline {
+.timeline {
   display: grid;
   grid-template-columns: 20% 80%;
   grid-template-rows: 36px 36px;
@@ -111,7 +111,7 @@
     line-height: 16px;
   }
 
-  .about__timeline {
+  .timeline {
     font-size: 11px;
     line-height: 1.2;
     grid-template-columns: 35% 65%;
