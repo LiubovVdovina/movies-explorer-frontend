@@ -5,7 +5,7 @@ export default function SearchForm() {
   return (
     <div className="section search">
       <div className="search__container section__container">
-        <form className="search__form" name="search-form" noValidate>
+        <form className="search__form" name="search-form">
           <input
             className="search__input"
             name="search-input"
