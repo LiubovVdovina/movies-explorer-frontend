@@ -1,10 +1,16 @@
 import './Navigation.css';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
+import { useMediaQuery } from 'react-responsive';
 import Hamburger from '../Hamburger/Hamburger';
 
 export default function Navigation({ loggedIn, handleBurgerClick, isBurgerOpened }) {
   
+  const location = useLocation();
+  const isMobile = useMediaQuery({ query: `(max-width: 880px)` });
+  
+  const accountTheme = `navigation__account_theme_${location.pathname !== '/' || isMobile ? 'light' : 'green'}`;
   const activeLink = `navigation__link_active_${isBurgerOpened ? 'mobile' : 'desktop'}`;
+
 
   function handleClickOverlay(e) {
     e.stopPropagation();
@@ -51,7 +57,7 @@ export default function Navigation({ loggedIn, handleBurgerClick, isBurgerOpened
                 </li>
               </div>
               <li className="navigation__item">
-                <Link className='navigation__account link' to='/profile'>
+                <Link className={`navigation__account ${accountTheme} link`} to='/profile'>
                   <span>Аккаунт</span>
                   <div className='account-icon' />
                 </Link>
