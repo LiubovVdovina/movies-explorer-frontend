@@ -13,8 +13,8 @@ export default function Portfolio() {
                 target='_blank'
                 rel="noreferrer">
                   Статичный сайт
+                  <img className='link portfolio__item-icon' src={icon} alt='стрелочка' />
               </a>
-              <img className='link portfolio__item-icon' src={icon} alt='стрелочка' />
             </li>
             <li className='portfolio__item'>
               <a className='link portfolio__link'
@@ -22,8 +22,8 @@ export default function Portfolio() {
                 target='_blank'
                 rel="noreferrer">
                   Адаптивный сайт
+                  <img className='link portfolio__item-icon' src={icon} alt='стрелочка' />
               </a>
-              <img className='link portfolio__item-icon' src={icon} alt='стрелочка' />
             </li>
             <li className='portfolio__item'>
               <a className='portfolio__link link'
@@ -31,8 +31,8 @@ export default function Portfolio() {
                 target='_blank'
                 rel="noreferrer">
                   Одностраничное приложение
+                  <img className='link portfolio__item-icon' src={icon} alt='стрелочка' />
               </a>
-              <img className='link portfolio__item-icon' src={icon} alt='стрелочка' />
             </li>
           </ul>
         </div>
