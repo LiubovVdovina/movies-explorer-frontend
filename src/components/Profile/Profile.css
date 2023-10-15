@@ -1,0 +1,136 @@
+.profile {
+  width: 100%;
+  height: calc(100vh - 74px);
+  padding-top: 74px;
+  padding-bottom: 70px;
+  box-sizing: border-box;
+}
+
+.profile__container {
+  flex-direction: column;
+  max-width: 396px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
+
+.profile__title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  height: min-content;
+}
+.form_place_profile {
+  margin-top: 123px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.form__field {
+  min-height: 30px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #E8E8E8;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.2px;
+  letter-spacing: 0px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+.field_type_last {
+  border: none;
+  min-width: min-content;
+}
+
+.form__input_place_profile {
+  font-weight: 400px;
+  text-align: right;
+  width: 80%;
+  border: none;
+  padding: 0;
+}
+
+.form__input:focus {
+  outline: none;
+  border-bottom: 1px solid #3456F3;
+  margin-bottom: -1px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 0;
+}
+
+.buttons_place_profile {
+  margin: 220px 0 0;
+}
+
+.buttons__item {
+  list-style-type: none;
+  text-align: center;
+}
+
+.form__button {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.2px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.form__button_type_logout {
+  color: #FF3055;
+}
+
+@media screen and (max-width: 880px) {
+  .form_place_profile {
+    margin-top: 96px;
+  }
+  .profile__container {
+    max-width: 410px;
+  }
+
+  .buttons_place_profile {
+    margin: 210px 0 0;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .form_place_profile {
+    margin-top: 80px;
+  }
+  .profile__container {
+    max-width: 80%;
+  }
+
+  .buttons_place_profile {
+    margin: 379px 0 0;
+  }
+}

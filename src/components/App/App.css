@@ -1,0 +1,32 @@
+.app {
+  background-color: #FFFFFF;
+  min-height: 100vh;
+  min-width: 320px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  font-family: 'Inter', Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+  height: 100%;
+}
+
+.link {
+  transition: opacity .3s;
+}
+
+.link:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.button {
+  transition: all .3s;
+}
+
+.button:hover {
+  opacity: .8;
+  cursor: pointer;
+}
