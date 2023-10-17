@@ -48,7 +48,11 @@
   align-items: baseline;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 34px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 .field__caption {
@@ -74,6 +78,37 @@
 
 .form__input_type_password {
   align-items: center;
+}
+
+.request-info {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.2;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  display: none;
+}
+
+.request-info_type_success {
+  color: #2BE080;
+}
+
+.request-info_type_fail {
+  color: #FF004C;
+}
+
+.request-info_place_auth {
+  bottom: 110px;
+}
+
+.request-info_place_profile {
+  bottom: 64px;
+}
+
+.request-info_active {
+  display: block;
 }
 
 .auth__error {
@@ -106,6 +141,11 @@
 
 }
 
+.button_place_auth:disabled {
+  background: #F8F8F8;
+  color: #C2C2C2;
+}
+
 .buttons__item_place_auth {
   width: 100%;
 }
@@ -131,6 +171,7 @@
 
 .form_place_auth {
   margin-top: 40px;
+  position: relative;
 }
 
 @media screen and (max-width: 880px) {

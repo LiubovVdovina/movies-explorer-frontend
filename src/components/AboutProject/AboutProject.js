@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import './AboutProject.css';
 
 export default function AboutProject() {
