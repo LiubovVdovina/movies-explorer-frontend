@@ -2,6 +2,7 @@ import './Navigation.css';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import Hamburger from '../Hamburger/Hamburger';
+import PropTypes from 'prop-types';
 
 export default function Navigation({ loggedIn, handleBurgerClick, isBurgerOpened }) {
   
@@ -67,4 +68,10 @@ export default function Navigation({ loggedIn, handleBurgerClick, isBurgerOpened
       )}
     </>
   );
+}
+
+Navigation.propTypes = {
+  handleBurgerClick: PropTypes.func.isRequired,
+  loggedIn: PropTypes.bool.isRequired,
+  isBurgerOpened: PropTypes.bool.isRequired
 }

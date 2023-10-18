@@ -2,6 +2,7 @@ import { useMediaQuery } from 'react-responsive';
 import { useEffect } from 'react';
 import './Hamburger.css';
 import {useLocation} from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 export default function Hamburger({ isBurgerOpened, handleBurgerClick }) {
   // контроль ширины экрана, для правильной логики работы классов и отображения меню
@@ -9,7 +10,7 @@ export default function Hamburger({ isBurgerOpened, handleBurgerClick }) {
 
   function handleOnClickBurger() {
     handleBurgerClick();
-  };
+  }
 
   // чтобы бургер-меню автоматически закрылось, если размер страницы увеличится
   useEffect(() => {
@@ -32,3 +33,8 @@ export default function Hamburger({ isBurgerOpened, handleBurgerClick }) {
     </button>
   );
 }
+
+Hamburger.propTypes = {
+  isBurgerOpened: PropTypes.bool.isRequired,
+  handleBurgerClick: PropTypes.func.isRequired,
+};

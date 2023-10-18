@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 import Navigation from '../Navigation/Navigation';
 import logo from '../../images/logo.svg';
+import PropTypes from 'prop-types';
 
 export default function Header({ loggedIn, handleBurgerClick, isBurgerOpened }) {
 
@@ -29,3 +30,9 @@ export default function Header({ loggedIn, handleBurgerClick, isBurgerOpened }) 
   else 
     return ('');
 }
+
+Header.propTypes = {
+  loggedIn: PropTypes.bool.isRequired,
+  isBurgerOpened: PropTypes.bool.isRequired,
+  handleBurgerClick: PropTypes.func.isRequired,
+};

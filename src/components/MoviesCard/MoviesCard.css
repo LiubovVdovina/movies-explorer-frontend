@@ -1,11 +1,22 @@
-.card:hover .card__button_type_remove{
+.card-item {
+  position: relative;
+}
+
+.card-item:hover .card__button_type_remove{
   display: block;
+}
+
+.card {
+  text-decoration: none;
 }
 
 .card:hover {
   cursor: pointer;
 }
 .card__button {
+  position: absolute;
+  bottom: 45px;
+  right: 0px;
   background-size: contain;
   border: none;
   padding: 0;
@@ -32,9 +43,9 @@
   border-bottom: 1px solid #E8E8E8;
   display: flex;
   justify-content: space-between;
-  padding: 14px 0 29px;
-  align-items: center;
-  min-height: 24px;
+  padding: 14px 0 0;
+  align-items: top;
+  min-height: 45px;
 }
 
 .card__image {
@@ -51,6 +62,8 @@
   line-height: 16px;
   letter-spacing: 0px;
   text-align: left;
+  color: #000;
+  width: calc(100% - 44px);
 
 }
 
